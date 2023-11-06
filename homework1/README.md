@@ -41,6 +41,6 @@ Display the values of the variables in the console , according to their type , i
 
 Create 2 arbitrary variables of type Null and Undefined respectively . Output their type to the console.
 
-**7.** Using the prompt() function, write a script that sequentially asks the user for a login, email, and password, and displays a message with the entered data on the screen. For example, "Dear User, your email is usermale@gmail.com, your password is qwerty ."
+**7.** Using the prompt() function, write a script that sequentially asks the user for a login, email, and password, and displays a message with the entered data on the screen. For example, "Dear User, your email is ```usermale@gmail.com```, your password is qwerty ."
 
 **8.** Write a script that calculates the number of seconds in an hour , in a day , in a month , records the results in the corresponding variables, and displays their values on the screen.

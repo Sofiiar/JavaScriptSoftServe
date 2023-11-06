@@ -17,7 +17,7 @@ export default class TimeConverter {
     getSecondsPerMonth(month) {
       let startOfMonth = new Date(this.year, month, 1);
       let endOfMonth = new Date(this.year, month + 1, 1);
-      return (endOfMonth - startOfMonth) / 1000;
+      return (endOfMonth - startOfMonth) / 1000; //1000 milliseconds in a second
     }
     
     getSecondsInEachMonth() {

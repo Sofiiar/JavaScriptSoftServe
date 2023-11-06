@@ -84,7 +84,7 @@ let { login, email, password } = getUserData();
 alert(`Dear ${login}, your email is ${email}, your password is ${password}.`);
 
 //======================================task8
-import { TimeConverter, converter } from '../models/TimeConverter.js';
+import TimeConverter, { converter } from '../models/TimeConverter.js';
 
 console.log(converter.getSecondsPerHour());
 console.log(converter.getSecondsPerDay());

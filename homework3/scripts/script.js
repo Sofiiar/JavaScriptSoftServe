@@ -47,8 +47,8 @@ function raiseToDegree(a, b) {
 }
 
 //TASK5================================================================
-function findMin(...args) {
-    return Math.min(...args);
+function findMin(...arguments) {
+    return Math.min(...arguments);
 }
 
 console.log("Minimal value in array is:", findMin(12, 14, 4, -4, 0.2));
@@ -69,8 +69,8 @@ console.log(findUnique([1, 2, 3, 5, 3])); // => false
 console.log(findUnique([1, 2, 3, 5, 11])); // => true
 
 //TASK7================================================================
-function lastElem(arr, x) {
-    const copyArray = [...arr]; 
+function lastElem(array, x) {
+    const copyArray = [...array]; 
     if (x === undefined) {
         return copyArray.pop();
     } else {
@@ -83,8 +83,8 @@ console.log(lastElem([3, 4, 10, -5], 2)); // [10, -5]
 console.log(lastElem([3, 4, 10, -5], 8)); // [3, 4, 10, -5]
 
 //TASK8================================================================
-function capitalizeFirstLetter(str) {
-    return str.split(' ').map(word => word.charAt(0).toUpperCase() + word.substr(1)).join(' ');
+function capitalizeFirstLetter(string) {
+    return string.split(' ').map(word => word.charAt(0).toUpperCase() + word.substr(1)).join(' ');
 }
 
 const outputString = capitalizeFirstLetter('i love java script');

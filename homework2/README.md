@@ -1,6 +1,5 @@
 - [x] 1 . __There is the following code:__
 
-<pre>
 ```javascript
 let x = 1;
 let y = 2;
@@ -20,8 +19,6 @@ console.log( typeof res3); // " boolean "
 let res4 = // Add code is required use variables x and y
 console.log(res4); // NaN
 console.log( typeof res4); // "number"
-```
-</pre>
 
 Add the code so that the lines written in the comments appear in the browser console, while operating with the x and y variables.
 
@@ -46,12 +43,10 @@ __Display the result of the check in the console.__
 - [x] 4. __Write a program that combines all existing elements of the array into a ribbon and separates them with the symbol “*”.__
 
 Initial array :
-<pre>
 ```javascript
 let cities = [" Rome ", " Lviv ", " Warsaw "];
 Result : " Rome * Lviv * Warsaw "
 ```
-</pre>
 
 - [x] 5. __Using the prompt () function , ask the user a question about reaching the age of majority. Record the result in the isAdult variable . Depending on the received value, display the appropriate message about the person's status. For example: if the condition is fulfilled, the age is more than 18, output "You have reached the age of majority". If the age is less than 18 years, display "You are still too young"__
 

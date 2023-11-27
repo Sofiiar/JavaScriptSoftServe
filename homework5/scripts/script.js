@@ -30,6 +30,8 @@ let vehicle = {
     console.log("Properties:", keys);
     console.log("Values:", values);
   }
+
+  showProps(vehicle);
   
   //TASK3=======================================================
   class Person {

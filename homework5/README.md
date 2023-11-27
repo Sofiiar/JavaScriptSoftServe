@@ -106,3 +106,31 @@ class Worker {
 let worker1 = new Worker("John Doe", 100, 20);
 console.log(worker1.showSalary()); // 2000
 console.log(worker1.showSalaryWithExperience()); // 2400
+```
+
+# Geometric Figures Exercise
+
+## Task Description
+Create a parent class `GeometricFigure` with an empty method `getArea()` and the `toString()` method to output the class name. Develop three descendant classes (`Triangle`, `Square`, and `Circle`) inheriting from `GeometricFigure`. Each child class should implement the `getArea()` method for its specific shape. Additionally, create a function `handleFigures(figures)` that processes an array of these objects, outputs details, and calculates the total area.
+
+### GeometricFigure Class
+```javascript
+class GeometricFigure {
+  getArea() {
+    return 0;
+  }
+  toString() {
+    return Object.getPrototypeOf(this).constructor.name;
+  }
+}
+
+Your code. . .
+
+const figures = [new Triangle(4, 5), new Square(7), new Circle(5)]; console.log( handleFigures (figures));
+
+Example result :
+Geometric figure: Triangle - area: 10
+Geometric figure: Square - area: 49
+Geometric figure: Circle - area: 78.53981633974483
+137.53981633974485 // total area
+```

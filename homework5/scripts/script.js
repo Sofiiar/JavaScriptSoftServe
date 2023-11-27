@@ -70,9 +70,9 @@ let vehicle = {
     }
   }
   
-  const stud1 = new Student("Petro", "Petrenko", 2015);
-  console.log(stud1.showFullName("Petrovych")); // Petrenko Petro Petrovych
-  console.log("Current course: " + stud1.showCourse()); // Current course: Graduated
+  const student = new Student("Petro", "Petrenko", 2015);
+  console.log(student.showFullName("Petrovych")); // Petrenko Petro Petrovych
+  console.log("Current course: " + student.showCourse()); // Current course: Graduated
 
   //TASK4=======================================================
   class Worker {

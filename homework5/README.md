@@ -108,7 +108,7 @@ console.log(worker1.showSalary()); // 2000
 console.log(worker1.showSalaryWithExperience()); // 2400
 ```
 
-# Geometric Figures Exercise
+## Exercise 4: Geometric Figures Exercise
 
 ## Task Description
 Create a parent class `GeometricFigure` with an empty method `getArea()` and the `toString()` method to output the class name. Develop three descendant classes (`Triangle`, `Square`, and `Circle`) inheriting from `GeometricFigure`. Each child class should implement the `getArea()` method for its specific shape. Additionally, create a function `handleFigures(figures)` that processes an array of these objects, outputs details, and calculates the total area.

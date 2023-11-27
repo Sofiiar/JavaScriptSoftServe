@@ -122,7 +122,9 @@ class GeometricFigure {
     return Object.getPrototypeOf(this).constructor.name;
   }
 }
+```
 
+```javascript
 Your code. . .
 
 const figures = [new Triangle(4, 5), new Square(7), new Circle(5)]; console.log( handleFigures (figures));

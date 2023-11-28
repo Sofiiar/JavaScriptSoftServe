@@ -5,7 +5,7 @@ document.body.childNodes[1].innerHTML = "Last"; //[0] contains text node with \n
 
 //TASK2================================
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     let primeImage = document.getElementById('image');
     let modalImage = document.getElementById('modalImage');
     let changePictureBtn = document.getElementById('changePictureBtn');
@@ -13,15 +13,15 @@ document.addEventListener('DOMContentLoaded', function() {
         keyboard: true
     });
 
-    changePictureBtn.addEventListener('click', function() {
-        primeImage.src = '/homework6/images/cat.jpg'; 
-        modalImage.src = primeImage.src; 
-        primeImage.alt = 'Cat'; 
-        modal.show(); 
+    changePictureBtn.addEventListener('click', function () {
+        primeImage.src = '/homework6/images/cat.jpg';
+        modalImage.src = primeImage.src;
+        primeImage.alt = 'Cat';
+        modal.show();
     });
 
     document.getElementById('modal').addEventListener('hidden.bs.modal', function () {
-        primeImage.src = '/homework6/images/dog.jpg'; 
-        primeImage.alt = 'Dog'; 
+        primeImage.src = '/homework6/images/dog.jpg';
+        primeImage.alt = 'Dog';
     });
 });

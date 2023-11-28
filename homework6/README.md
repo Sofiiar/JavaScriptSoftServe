@@ -23,4 +23,4 @@ There is an image element on the page :
 ```
 
 You need to change the dog image.jpg to cat.jpg . 
-Display the contents of the < img>  tag with the new image in the modal window. 
+Display the contents of the `<img>`  tag with the new image in the modal window. 

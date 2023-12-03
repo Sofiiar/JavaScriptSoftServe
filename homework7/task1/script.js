@@ -5,6 +5,6 @@ document.addEventListener('DOMContentLoaded', function () {
         setTimeout(function () { newWindow.moveTo(200, 200); }, 4000);
         setTimeout(function () { newWindow.close(); }, 6000);
     } else {
-        console.error('The new window could not be opened. It may have been blocked by a pop-up blocker.');
+        console.error('The new window could not be opened. It may have been blocked.');
     }
 });

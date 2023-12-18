@@ -11,28 +11,29 @@ isUpperCaseMatch('RegExp');  // String starts with uppercase character
 function checkEmail(email) {
     const trimmedEmail = email.trim();
     const regex = /^[a-zA-Z][a-zA-Z0-9._-]*@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-    return regex.test(trimmedEmail);
+    return console.log(regex.test(trimmedEmail));
 }
 
-console.log(checkEmail("Qmail2@gmail.com ")); //true
+checkEmail("Qmail2@gmail.com "); //true
 
 //================================TASK3================================
 function findMatches(text) {
-    const regex = /d[b]+d?/gi;
+    const regex = /d([b]+)(d?)/gi;
     let matches = [];
     let match;
 
-    match = regex.exec(text);
-    matches.push(match[0]);
-        const matchText = match[0];
-        const sameCharactersWithoutFirstGroupRegex = /(?<!^)(.)\1*/gi;
-        Array.from(matchText.matchAll(sameCharactersWithoutFirstGroupRegex), m => matches.push(m[0]));
+    while ((match = regex.exec(text)) !== null) {
+        for (let i = 0; i < match.length; i++) {
+            matches.push(match[i]);
+        }
+    }
 
-    return matches;
+    return matches; 
 }
 
 const result = findMatches(" cdbBdbsbz ");
-console.log(result); 
+console.log(result);  // Output: ['dbBd', 'bB', 'd']
+
 
 //================================TASK4=================================
 function swapTwoWords(input) {
@@ -77,10 +78,10 @@ function checkLogin(login) {
     const isValidLogin = isLoginValid(login);
     const numbers = extractNumbers(login);
 
-    console.log(isValidLogin); 
-    numbers.forEach(number => console.log(number)); 
+    console.log(isValidLogin);
+    numbers.forEach(number => console.log(number));
 
-    return isValidLogin; 
+    return isValidLogin;
 }
-checkLogin('ee1.1ret3'); 
+checkLogin('ee1.1ret3');
 checkLogin('ee1*1ret3'); 

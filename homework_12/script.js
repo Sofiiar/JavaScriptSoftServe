@@ -1,11 +1,11 @@
 //==============================TASK1================================
 function isUpperCaseMatch(string) {
     const regex = /^[A-Z]/;
-    return string.match(regex) ? "String starts with uppercase character" : "String does not start with uppercase character";
+    return string.match(regex) ? console.log("String starts with uppercase character") : console.log("String does not start with uppercase character");
 }
 
-console.log(isUpperCaseMatch('regexp'));  // String does not start with uppercase character
-console.log(isUpperCaseMatch('RegExp'));  // String starts with uppercase character
+isUpperCaseMatch('regexp');  // String does not start with uppercase character
+isUpperCaseMatch('RegExp');  // String starts with uppercase character
 
 //===============================TASK2================================
 function checkEmail(email) {
